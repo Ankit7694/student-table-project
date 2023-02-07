@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tex inVoice</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+        }
+
+        input {
+            /* border:none; */
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center style="font-weight: bold;">Tax Invoice</center>
+    </h1>
+
+
+    <table style="width: 100%;">
+        <tr>
+            <td rowspan="5 " style="width:60%;"><b>SHREE SAI INFOTECH</b><br>U G 13 BLOCK B SILVER MALL <br> 8 R N T
+                MARG INDORE (M.P) <br>
+                <pre> <p  style="margin-top: -3%; font-size: 16px;">PH          : <input type="Number" placeholder="Contact-no." id ="phone" name="phone" min="0" max="1000000000000" style="width: 30%;"></p> </pre>
+                <br>
+                <pre> <p  style="margin-top: -11%; font-size: 16px;">CENT        : <input type="Number" placeholder="Cent" id ="phone" name="phone" min="0" max="1000000000000" style="width: 30%;"></p> </pre>
+                <br> <br>
+                <pre> <p  style="margin-top:-16%; font-size: 16px;">GSTIN/UIN   : <input type="text"  placeholder="GSTIN/UIN" style="width: 30%;"></p> </pre>
+                <br>
+                <br>
+                <pre> <p  style="margin-top: -21%; font-size: 16px;">State Name  : <input type="text" placeholder="State name" style="width: 30%;"></p> </pre>
+                <br>
+                <pre> <p  style="margin-top: -23.7%; font-size: 16px;">Email       : <input type="text" placeholder="Email" style="width: 30%;"></p> </pre>
+            </td>
+            <td style="height: 30px;">Invoice No: <br> <b><input type="number" placeholder="invoice number" id="number"
+                        name="number"></b></td>
+            <td>date <br><b><input type="date" value="date"></b></td>
+
+        <tr style="height: 10px;">
+            <td style="height: 30px;">Delivery Note</td>
+            <td>Mode/Terms of payment
+                <br><b><input type="text" placeholder="Case "></b>
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 30px;">supplier's Ref. <br> <b> <input type="text" placeholder="Supplier's Ref"></b>
+            </td>
+            <td>Other Reference(s)
+            </td>
+        </tr>
+
+        </tr>
+
+    </table>
+    <table style="width: 100%; ;">
+        <tr>
+            <td rowspan="5" style="width:60%; font-size: 16px;">Buyer <br>
+                <b>QLTYEXPERT PVT LTD</b> <br>
+                <pre><p>GSTIN/UIN        :  <input type="text"  placeholder="GSTIN/UIN"> </p><p>State Name       :  <input type="text"  placeholder="State Name"></p><p>Place of Supply  :  <input type="text"  placeholder="For Supply"></p></pre>
+            </td>
+        <tr>
+            <td style="height: 30px;">Buyer's Order No.</td>
+            <td>Dated</td>
+        </tr>
+        <tr>
+            <td style="height:30px">Despatch Document No.</td>
+            <td>Delivery Note Date </td>
+        </tr>
+        <tr>
+            <td style="height:30px">Despatched through</td>
+            <td>Destination </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height:60px">Terms Of Deslivery</td>
+
+        </tr>
+        </tr>
+    </table>
+    <table style="width:100%;">
+        <tr>
+            <th style="width: 35px;">S.No</th>
+            <th style="width: 30%;">Description of <br> Goods and Services</th>
+            <th style="width: 10%;">HSN/SAC</th>
+            <th style="width: 5%;">GST <br> Rate</th>
+            <th style="width:8%;">Quantity</th>
+            <th style="width:10%;">Sale Price</th>
+            <th style="width: 10%;">Rate</th>
+            <th style="width: 5%;">Per</th>
+            <th style="width: 6%;">Disc Per </th>
+            <th>Account</th>
+
+        <tr style="height: 500px;">
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <td>Total</td>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th><input type="text" placeholder="Quantity" style="width: 70px;"></th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th style="text-align:left;">Rs.-</th>
+        </tr>
+
+        </tr>
+    </table>
+    <table style="width: 100%;">
+        <tr style="height: 60px; ">
+            <td style="width:500px; border: 0;">Amount Chargeable(In words) <br><b>Indian Rupees Four Thousand Only</b>
+            </td>
+            <td style="position: absolute; top:194%; right:1%;border: none;">E & O E</td>
+
+        </tr>
+    </table>
+    <table style="width: 100%;">
+        <tr style="height: 60px; text-align: center;">
+            <td rowspan='2' style="width: 40%;">HSN/SAC</td>
+            <td rowspan='2' style="width: 10%;">Taxable <br> Value</td>
+            <td colspan="2" style="width:20%">Central Tax</td>
+
+            <td colspan="2" style="width:20%">State Tax</td>
+            <td rowspan="2">
+                Total <br>
+                Tax Amount
+            </td>
+        </tr>
+        <tr>
+
+            <td style="text-align: center;">Rate</td>
+            <td style="text-align: center;">Amount</td>
+            <td style="text-align: center;">Rate</td>
+            <td style="text-align: center;">Amount</td>
+
+        </tr>
+
+    </table>
+
+    <table style="width: 100%;">
+        <tr style="height: 50px; ">
+            <td style="width: 40%;">&nbsp;</td>
+            <td style="width: 10%;text-align: center;">&nbsp;</td>
+            <td colspan="2" style="width:20%;text-align: center;">&nbsp;</td>
+            <td colspan="2" style="width:20%;text-align: center;">&nbsp;</td>
+            <td style="text-align: center;">
+                &nbsp
+            </td>
+
+
+        </tr>
+
+    </table>
+    <table style="width:100%;">
+        <tr style="height: 300px">
+            <div class="list_view">
+                <td style="position: relative;top:1%;font-size: 18px;">
+                    Tax Amount(in words): <input type="text" placeholder="Amount(in words)"
+                        style="border:none;width: 40% ;height: 30px;font-size: 16px;">
+
+            </div>
+            <div style="margin-top:1%; margin-left:40%;">
+                Campany's Bank Detail<br>
+                <pre><p style="font-size: 17px;">Bank Name         : <input type="text" placeholder="Bank Name "style="width:50%;height:10%;border:none;margin-top:-5%;font-size:16px">
+                </p></pre>
+                <br>
+                <pre><p style="font-size: 17px; margin-top: -9%;">A/c NO.           : <input type="Number" placeholder="A/c No." id="atm" name="atm"  class="atm" maxlength="16" style="width:50%;height:10%;border:none;margin-top:-5%;font-size:16px">
+                </p></pre>
+                <br>
+                <pre><p style="font-size: 17px; margin-top: -9%;">Branch & IFS Code : <input type="text" placeholder="Branch & IFC Code "style="width:50%;border:none;height:10%;margin-top:-5%;font-size:16px">
+                </p></pre>
+            </div>
+            <div>
+                <pre><p style="font-size: 17px; margin-top:-40px;">Company's PAN           : <input type="text" placeholder="Company PAN "style="width:20%;height:10%;border:none;margin-top:-7%;font-size:16px">
+                </p></pre>
+                <br>
+                <p style="margin-top:-45px;"> Declaration <br>
+                    We declare that this invoice shows the actual price of the good <br> described and that all
+                    particulars are true and correct </p>
+            </div>
+            <div
+                style="height: 80px; width: 55%; border: 1px solid grey;position: relative; left:45%; margin-top:-61px;">
+                <h1 style="text-align: right; font-size: 18px; margin-top: 2px;">for <input type="text"
+                        placeholder="supplier's Name" style="width: 40%;border: none;font-size: 16px;"></h1>
+                <p style=" position: absolute;
+              top:40px;
+              right: 2px;
+              font-size: 18px;">Authorised Signatory</p>
+            </div>
+            </td>
+
+
+        </tr>
+    </table>
+
+</body>
+
+</html>
